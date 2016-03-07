@@ -17,6 +17,7 @@ import android.view.MenuItem;
 
 import com.platzi.miprimeraappmaterial.adapters.CursosAdapter;
 import com.platzi.miprimeraappmaterial.models.Cursos;
+import com.yqritc.recyclerviewflexibledivider.HorizontalDividerItemDecoration;
 
 import java.util.ArrayList;
 
@@ -102,6 +103,7 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setHasFixedSize(true);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(new CursosAdapter(cursos, R.layout.row));
+        recyclerView.addItemDecoration(new HorizontalDividerItemDecoration.Builder(this).build());
         final LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
         recyclerView.setLayoutManager(layoutManager);
