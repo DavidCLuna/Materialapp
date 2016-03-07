@@ -20,7 +20,7 @@ public class Cursos {
     }
 
     public String getTitle() {
-        return title;
+        return "Curso de "+title;
     }
 
     public void setTitle(String title) {

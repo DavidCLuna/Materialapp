@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Hola Platzi", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "¿Dudas? cursos@platzi.com", Snackbar.LENGTH_LONG)
                         .show();
             }
         });
@@ -42,65 +42,59 @@ public class MainActivity extends AppCompatActivity {
         setRecyclerView();
     }
 
+
     public void setRecyclerView(){
 
         ArrayList<Cursos>  cursos = new ArrayList<>();
 
         Cursos curso = new Cursos();
         curso.setTitle("React");
-        curso.setDescription("Aprende todo sobre la libreria de Facebook");
+        curso.setDescription("Crea componentes gracias a la libreria de facebook");
         curso.setBadge("react");
         cursos.add(curso);
 
-
         Cursos curso2 = new Cursos();
-        curso2.setTitle("React 2");
-        curso2.setDescription("Aprende todo sobre la libreria de Facebook");
-        curso2.setBadge("react");
+        curso2.setTitle("Marketing Online");
+        curso2.setDescription("Se un estratega digital");
+        curso2.setBadge("marketing");
         cursos.add(curso2);
 
         Cursos curso3 = new Cursos();
-        curso3.setTitle("React 3");
-        curso3.setDescription("Aprende todo sobre la libreria de Facebook");
-        curso3.setBadge("react");
+        curso3.setTitle("Photoshop");
+        curso3.setDescription("Aprende Photoshop enfocado a la web");
+        curso3.setBadge("photoshop");
         cursos.add(curso3);
 
-        Cursos curso4 = new Cursos();
-        curso4.setTitle("React 3");
-        curso4.setDescription("Aprende todo sobre la libreria de Facebook");
-        curso4.setBadge("react");
-        cursos.add(curso4);
-
         Cursos curso5 = new Cursos();
-        curso5.setTitle("React 3");
-        curso5.setDescription("Aprende todo sobre la libreria de Facebook");
-        curso5.setBadge("react");
+        curso5.setTitle("Android");
+        curso5.setDescription("Aprende a hacer aplicaciones como esta");
+        curso5.setBadge("android");
         cursos.add(curso5);
 
         Cursos curso6 = new Cursos();
-        curso6.setTitle("React 3");
-        curso6.setDescription("Aprende todo sobre la libreria de Facebook");
+        curso6.setTitle("React");
+        curso6.setDescription("Crea componentes gracias a la libreria de facebook");
         curso6.setBadge("react");
         cursos.add(curso6);
 
         Cursos curso7 = new Cursos();
-        curso7.setTitle("React 3");
-        curso7.setDescription("Aprende todo sobre la libreria de Facebook");
-        curso7.setBadge("react");
+        curso7.setTitle("Marketing Online");
+        curso7.setDescription("Se un estratega digital");
+        curso7.setBadge("marketing");
         cursos.add(curso7);
 
         Cursos curso8 = new Cursos();
-        curso8.setTitle("React 3");
-        curso8.setDescription("Aprende todo sobre la libreria de Facebook");
-        curso8.setBadge("react");
+        curso8.setTitle("Photoshop");
+        curso8.setDescription("Aprende Photoshop enfocado a la web");
+        curso8.setBadge("photoshop");
         cursos.add(curso8);
 
-
         Cursos curso9 = new Cursos();
-        curso9.setTitle("React 3");
-        curso9.setDescription("Aprende todo sobre la libreria de Facebook");
-        curso9.setBadge("react");
+        curso9.setTitle("Android");
+        curso9.setDescription("Aprende a hacer aplicaciones como esta");
+        curso9.setBadge("android");
         cursos.add(curso9);
+
 
 
 
@@ -112,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
         recyclerView.setLayoutManager(layoutManager);
 
-        // The View with the BottomSheetBehavior
+
         CoordinatorLayout coordinatorLayout = (CoordinatorLayout) findViewById(R.id.coordinator);
         View bottomSheet = coordinatorLayout.findViewById(R.id.cursos);
 

@@ -1,5 +1,6 @@
 package com.platzi.miprimeraappmaterial.adapters;
 
+import android.support.design.widget.Snackbar;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -39,6 +40,14 @@ public class CursosAdapter extends RecyclerView.Adapter<CursosAdapter.ViewHolder
         public ViewHolder(View itemView) {
             super(itemView);
 
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Snackbar.make(v, title.getText() , Snackbar.LENGTH_LONG)
+                            .show();
+                }
+            });
+
             badgeImage  =   (ImageView) itemView.findViewById(R.id.imageRow);
             title   =    (TextView) itemView.findViewById(R.id.title);
             description = (TextView) itemView.findViewById(R.id.description);
@@ -72,6 +81,24 @@ public class CursosAdapter extends RecyclerView.Adapter<CursosAdapter.ViewHolder
                 case "react":
                     viewHolder.badgeImage.setImageResource(R.mipmap.reactj);
                     break;
+
+                case "android":
+                    viewHolder.badgeImage.setImageResource(R.mipmap.android);
+                    break;
+
+                case "mysql":
+                    viewHolder.badgeImage.setImageResource(R.mipmap.mysql);
+                    break;
+
+                case "marketing":
+                    viewHolder.badgeImage.setImageResource(R.mipmap.marketing);
+                    break;
+
+                case "photoshop":
+                    viewHolder.badgeImage.setImageResource(R.mipmap.photoshop);
+                    break;
+
+
 
             }
 
