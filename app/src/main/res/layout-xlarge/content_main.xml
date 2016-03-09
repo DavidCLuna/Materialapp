@@ -17,6 +17,7 @@
     <EditText
         android:id="@+id/nombre"
         android:hint="Nombre"
+        android:textSize="40dp"
         android:textColor="@color/textcolor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
@@ -25,6 +26,7 @@
     <EditText
         android:id="@+id/password"
         android:hint="Password"
+        android:textSize="40dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
